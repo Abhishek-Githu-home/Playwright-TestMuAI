@@ -1,5 +1,9 @@
 # Playwright-TestMuAI
 
+## 👤 Author: **Abhishek K M**
+
+[![Playwright Tests](https://github.com/Abhishek-Githu-home/Playwright-TestMuAI/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/Abhishek-Githu-home/Playwright-TestMuAI/actions/workflows/playwright.yml)
+
 This repository features the automated testing flows assigned as part of the **Playwright Test MUAI certification process**. It includes a structured suite of end-to-end tests built with **Playwright** and **JavaScript**, designed to validate core web application functionalities.
 
 ## 📋 Project Overview
@@ -269,23 +273,4 @@ Grant execution permissions:
 chmod +x node_modules/.bin/playwright
 ```
 
-## 📚 Learning Resources
 
-- [Playwright Official Documentation](https://playwright.dev)
-- [Playwright Test Runner Guide](https://playwright.dev/docs/intro)
-- [Locators & Selectors](https://playwright.dev/docs/locators)
-- [Assertions Reference](https://playwright.dev/docs/test-assertions)
-
-## 👤 Author
-
-**Abhishek-Githu-home**
-
-## 📄 License
-
-ISC
-
----
-
-**Last Updated:** July 2026  
-**Framework Version:** Playwright 1.61.1  
-**Status:** Active Development
