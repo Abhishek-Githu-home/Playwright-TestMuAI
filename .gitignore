@@ -3,6 +3,13 @@
 node_modules/
 /test-results/
 /playwright-report/
+/playwright-cloud-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+.env
+
+# Test report artifacts
+/allure-report/
+/index.html
+*.log

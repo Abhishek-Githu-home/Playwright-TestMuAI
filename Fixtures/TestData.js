@@ -6,7 +6,7 @@ module.exports = {
     Username: 'User001',
     Email: 'User@001',
     Password: 'User@0101',
-    Company: 'NVDIA',
+    Company: 'NVIDIA',
     UserURL: 'https://www.testmuai.com/selenium-playground',
     Country: 'United States',
     City: 'Bentonville',
