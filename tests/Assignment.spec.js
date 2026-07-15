@@ -3,9 +3,13 @@ const data = require('../Fixtures/TestData.js')
 
 test.describe("Assignment Task: Playwright 101", () => {
 
+    test.beforeEach(async ({ page }) => {
+        await page.goto(data.UserURL)
+        await expect(page).toHaveTitle(data.Title)
+    })
+
     test("Verification of @TestScenario-1", async ({ page }) => {
 
-        await page.goto(data.URL)
         await expect(page).toHaveURL(/.*\/selenium-playground\//);
 
         const pageTitle = await page.locator('h1.font-bold').textContent()
@@ -29,9 +33,6 @@ test.describe("Assignment Task: Playwright 101", () => {
 
     test("Verification of @TestScenario-2", async ({ page }) => {
 
-        await page.goto(data.UserURL)
-        await expect(page).toHaveTitle(data.Title)
-
         await page.getByText('Drag & Drop Sliders', { exact: true }).click()
         await page.waitForLoadState('domcontentloaded')
 
@@ -48,9 +49,6 @@ test.describe("Assignment Task: Playwright 101", () => {
     })
 
     test("Verification of @TestScenario-3", async ({ page }) => {
-        await page.goto(data.UserURL)
-        await expect(page).toHaveTitle(data.Title)
-
         await page.getByRole('link', { name: 'Input Form Submit' }).click()
 
         const Headline = await page.locator('.container').first().innerText()
