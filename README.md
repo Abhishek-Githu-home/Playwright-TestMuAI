@@ -91,6 +91,30 @@ npx playwright test --debug
 npx playwright test tests/Assignment.spec.js
 ```
 
+### Run Tests on TestMuAi Cloud
+
+1. Copy `.env.example` to `.env` and set your TestMuAi cloud endpoint:
+
+```bash
+cp .env.example .env
+# or on Windows PowerShell:
+# copy .env.example .env
+```
+
+2. Populate `TESTMUI_WS_ENDPOINT` with your TestMuAi WebSocket URL.
+
+3. Run cloud tests:
+
+```bash
+npm run test:testmuai
+```
+
+4. To target the cloud Chrome project explicitly:
+
+```bash
+npm run test:testmuai:chrome
+```
+
 ### Run Tests with Specific Test Name
 
 ```bash

@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:testmuai": "npx playwright test --config=playwright.cloud.config.cjs",
+    "test:testmuai:chrome": "npx playwright test --config=playwright.cloud.config.cjs --project=testmuai-chrome"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.0"
-  },
-  "dependencies": {
-    "allure-commandline": "^2.43.0"
+    "@types/node": "^22.10.5",
+    "allure-commandline": "^2.43.0",
+    "dotenv": "^16.3.1"
   }
 }
